@@ -14,7 +14,7 @@ CPlayer::~CPlayer()
 
 void CPlayer::Initialize(void)
 {
-	m_tInfo = { 100.f, 200.f, 100.f, 100.f };
+	m_tInfo = { 400.f, 300.f, 100.f, 100.f };
 
 	m_fSpeed = 10.f;
 	m_fJumpPower = 15.f;
