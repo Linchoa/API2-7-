@@ -49,6 +49,18 @@
     <Filter Include="98. Design\05. StageMgr">
       <UniqueIdentifier>{df7a40f5-07ce-4c20-a9cf-31dd00de8c75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="98. Design\06. ScrollMgr">
+      <UniqueIdentifier>{0e6a5a34-13bf-4051-8d60-53d14c01461a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Obj\01. Monster">
+      <UniqueIdentifier>{a9a49851-f555-4904-8a49-33e4864e092f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Obj\02.Item">
+      <UniqueIdentifier>{e1331849-2074-4742-918f-d727c6221ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Design\07. BlockMgr">
+      <UniqueIdentifier>{44b5d1b3-c48b-4cf2-90a7-96f00fb23560}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -108,6 +120,18 @@
     <ClInclude Include="StageMgr.h">
       <Filter>98. Design\05. StageMgr</Filter>
     </ClInclude>
+    <ClInclude Include="ScrollMgr.h">
+      <Filter>98. Design\06. ScrollMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>01. Obj\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>01. Obj\02.Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>98. Design\07. BlockMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -142,6 +166,18 @@
     </ClCompile>
     <ClCompile Include="StageMgr.cpp">
       <Filter>98. Design\05. StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollMgr.cpp">
+      <Filter>98. Design\06. ScrollMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>01. Obj\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>01. Obj\02.Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>98. Design\07. BlockMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

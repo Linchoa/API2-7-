@@ -1,6 +1,7 @@
 #pragma once
 #include "Line.h"
 #include "Functional.h"
+#include "Enum.h"
 
 class CLineMgr
 {
@@ -10,10 +11,14 @@ private:
 
 public:
 	void		Initialize(void);
+	void		Update();
 	void		Render(HDC hDC);
 	void		Release(void);
 
 	bool		Collision_Line(float fX, float* pY);
+
+	void		Save_File(void);
+	void		Load_File(void);
 
 public:
 	static		CLineMgr*		Get_Instance(void)
@@ -35,5 +40,7 @@ public:
 private:
 	static		CLineMgr*		m_pInstance;
 	list<CLine*>				m_LineList;
+
+	LINEPOINT					m_tLinePoint[END];
 };
 
