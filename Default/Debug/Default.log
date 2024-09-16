@@ -1,11 +1,5 @@
-﻿  StageMgr.cpp
-  MainGame.cpp
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
-  Player.cpp
-  ObjMgr.cpp
-  Obj.cpp
-  Default.cpp
-  코드를 생성하고 있습니다...
+﻿  Player.cpp
+c:\users\석재욱\desktop\윤지_공부\api2차 - 7팀\default\default\player.cpp(100): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\석재욱\desktop\윤지_공부\api2차 - 7팀\default\default\player.cpp(101): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Default.vcxproj -> C:\Users\석재욱\Desktop\윤지_공부\API2차 - 7팀\Default\Debug\Default.exe
   Default.vcxproj -> C:\Users\석재욱\Desktop\윤지_공부\API2차 - 7팀\Default\Debug\Default.pdb (Full PDB)

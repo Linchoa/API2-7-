@@ -2,6 +2,8 @@
 #include "Obj.h"
 #include "LineMgr.h"
 #include "KeyMgr.h"
+#include "ScrollMgr.h"
+
 class CPlayer :
 	public CObj
 {
@@ -19,6 +21,7 @@ public:
 private:
 	void		Key_Input(void);
 	void		Jumping(void);
+	void		Offset(void);
 
 private:
 	bool				m_bJump;

@@ -30,6 +30,8 @@ void CMainGame::Update(void)
 {
 	CObjMgr::Get_Instance()->Update();
 	CStageMgr::Get_Instance()->Update();
+
+	CLineMgr::Get_Instance()->Update();
 }
 
 void CMainGame::Late_Update(void)

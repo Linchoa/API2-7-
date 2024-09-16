@@ -14,7 +14,7 @@ CPlayer::~CPlayer()
 
 void CPlayer::Initialize(void)
 {
-	m_tInfo = { 300.f, 400.f, 100.f, 100.f };
+	m_tInfo = { 100.f, 300.f, 60.f, 60.f };
 
 	m_fSpeed = 10.f;
 	m_fJumpPower = 15.f;
@@ -27,6 +27,7 @@ int CPlayer::Update(void)
 
 	Jumping();
 	Key_Input();
+	Offset();
 
 	Update_Rect();
 
@@ -39,10 +40,12 @@ void CPlayer::Late_Update(void)
 
 void CPlayer::Render(HDC hDC)
 {
+	int iScrollX = (int)CScrollMgr::Get_Instance()->Get_ScrollX();
+
 	Rectangle(hDC,
-		m_tRect.left,
+		m_tRect.left + iScrollX,
 		m_tRect.top,
-		m_tRect.right,
+		m_tRect.right + iScrollX,
 		m_tRect.bottom);
 }
 
@@ -86,4 +89,23 @@ void CPlayer::Jumping(void)
 	{
 		m_tInfo.fY = fY;
 	}
+	else if (!bLineCol)
+	{
+		m_tInfo.fY += m_fSpeed;
+	}
+}
+
+void CPlayer::Offset(void)
+{
+	int iOffsetMinX = 100.f;
+	int iOffsetMaxX = 400.f;
+
+	int iScrollX = (int)CScrollMgr::Get_Instance()->Get_ScrollX();
+
+	if (iOffsetMinX > m_tInfo.fX + iScrollX)
+		CScrollMgr::Get_Instance()->Set_ScrollX(m_fSpeed);
+
+	if (iOffsetMaxX < m_tInfo.fX + iScrollX)
+		CScrollMgr::Get_Instance()->Set_ScrollX(-m_fSpeed);
+
 }
